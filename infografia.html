@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Data en la Industria Manufacturera</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="sticky top-0 z-50 bg-white shadow-md w-full">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-[#00429d]">Big Data en la Manufactura</h1>
+            <div class="space-x-6">
+                <a href="#capacidades" class="text-gray-600 hover:text-[#00429d] transition-colors">Capacidades</a>
+                <a href="#analisis" class="text-gray-600 hover:text-[#00429d] transition-colors">Análisis Exploratorio</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <section id="capacidades" class="mb-16 scroll-mt-20">
+            <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-white rounded-lg shadow-lg p-6 md:p-10 mb-8">
+                <h2 class="text-3xl font-bold text-center text-[#00429d] mb-4">Capacidades Predictivas del Big Data</h2>
+                <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto">
+                    El Big Data transforma la industria manufacturera al ofrecer capacidades predictivas que optimizan operaciones, mejoran la calidad y reducen costos. A continuación, se exploran siete capacidades clave.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#00429d]">
+                    <span class="text-4xl">⚙️</span>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-4 mb-2">1. Mantenimiento Predictivo (PdM)</h3>
+                    <p class="text-gray-600">
+                        Anticipa fallos en maquinaria usando datos de sensores (IoT). Permite programar mantenimientos proactivamente, reduciendo el tiempo de inactividad y extendiendo la vida útil de los activos.
+                    </p>
+                </div>
+
+                <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#4771b2]">
+                    <span class="text-4xl">🚚</span>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-4 mb-2">2. Optimización de la Cadena de Suministro</h3>
+                    <p class="text-gray-600">
+                        Analiza datos en tiempo real (tráfico, clima, demanda) para predecir cuellos de botella. Permite ajustar rutas logísticas, niveles de inventario y selección de proveedores dinámicamente.
+                    </p>
+                </div>
+
+                <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#73a2c6]">
+                    <span class="text-4xl">🏆</span>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-4 mb-2">3. Mejora de la Calidad del Producto</h3>
+                    <p class="text-gray-600">
+                        Recopila datos del proceso de producción para predecir la probabilidad de defectos, identificando las variables exactas que causan problemas de calidad para su corrección inmediata.
+                    </p>
+                </div>
+
+                <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#a6d3d9]">
+                    <span class="text-4xl">🎨</span>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-4 mb-2">4. Personalización de Productos</h3>
+                    <p class="text-gray-600">
+                        Analiza preferencias de clientes y tendencias para predecir la demanda de características personalizadas, permitiendo a las fábricas ajustar líneas de ensamblaje de forma flexible (Mass Customization).
+                    </p>
+                </div>
+                
+                <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#00429d]">
+                    <span class="text-4xl">⚡️</span>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-4 mb-2">5. Eficiencia Energética</h3>
+                    <p class="text-gray-600">
+                        Identifica patrones de consumo ineficientes analizando datos de sensores. Predice el consumo energético para sugerir ajustes operativos y reducir costos significativamente.
+                    </p>
+                </div>
+
+                <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#4771b2]">
+                    <span class="text-4xl">📦</span>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-4 mb-2">6. Gestión Predictiva de Inventarios</h3>
+                    <p class="text-gray-600">
+                        Pronostica la demanda futura con alta precisión analizando estacionalidad, tendencias y eventos externos, asegurando niveles de inventario óptimos y evitando sobrecostos.
+                    </p>
+                </div>
+
+                <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-white rounded-lg shadow-lg p-6 border-t-4 border-[#73a2c6]">
+                    <span class="text-4xl">📈</span>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-4 mb-2">7. Previsión de la Demanda y Planificación</h3>
+                    <p class="text-gray-600">
+                        Utiliza datos internos y externos (redes sociales, macroeconomía) para crear pronósticos precisos, permitiendo planificar la producción, compras y asignación de personal.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="analisis" class="mb-16 scroll-mt-20">
+            <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-white rounded-lg shadow-lg p-6 md:p-10 mb-12">
+                <h2 class="text-3xl font-bold text-center text-[#00429d] mb-4">Análisis Exploratorio de la Base de Datos (EDIT)</h2>
+                <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto">
+                    Basado en la "Encuesta de Desarrollo e Innovación Tecnológica (EDIT)", este análisis conceptual explora las relaciones, patrones y anomalías hipotéticas en la industria manufacturera.
+                </p>
+            </div>
+
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-6 text-center">Relaciones entre Variables (Hipótesis)</h3>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                    <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-white rounded-lg shadow-xl p-6">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-2">Inversión en I+D vs. Innovación Estricta</h4>
+                        <div class="chart-container relative w-full max-w-2xl mx-auto h-80 md:h-96">
+                            <canvas id="relacion1Chart"></canvas>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-600">
+                            Se hipotetiza una correlación positiva fuerte: a mayor inversión en "I+D Internas" (eje X), mayor es la probabilidad de ser una "Innovadora en sentido estricto" (eje Y).
+                        </p>
+                    </div>
+
+                    <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-white rounded-lg shadow-xl p-6">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-2">Nivel Educativo vs. Patentes Obtenidas</h4>
+                        <div class="chart-container relative w-full max-w-2xl mx-auto h-80 md:h-96">
+                            <canvas id="relacion2Chart"></canvas>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-600">
+                            Se espera que empresas con más personal de postgrado (doctorado/maestría) en ACTI (eje X) reporten un número mayor de patentes obtenidas (eje Y).
+                        </p>
+                    </div>
+
+                    <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-white rounded-lg shadow-xl p-6">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-2">Obstáculos vs. No Innovación</h4>
+                        <div class="chart-container relative w-full max-w-2xl mx-auto h-80 md:h-96">
+                            <canvas id="relacion3Chart"></canvas>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-600">
+                            La hipótesis sugiere que los sectores que reportan "Alta" importancia en obstáculos financieros y de talento (barras azules) también muestran el mayor porcentaje de empresas "No Innovadoras" (barras turquesas).
+                        </p>
+                    </div>
+
+                    <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-white rounded-lg shadow-xl p-6">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-2">Origen de la Empresa vs. Enfoque de Inversión</h4>
+                        <div class="chart-container relative w-full max-w-2xl mx-auto h-80 md:h-96">
+                            <canvas id="relacion4Chart"></canvas>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-600">
+                            Se postula que las empresas de capital extranjero priorizan la "I+D Interna" (azul), mientras que las gestionadas por fundadores podrían priorizar la "Adquisición de Maquinaria" (turquesa).
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-6 text-center">Patrones Detectados</h3>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                    <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-white rounded-lg shadow-xl p-6">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-2">Patrón de Inversión en Innovación</h4>
+                        <div class="chart-container relative w-full max-w-xl mx-auto h-80 md:h-96">
+                            <canvas id="patron1Chart"></canvas>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-600">
+                            Un patrón común es que la inversión en "Adquisición de Maquinaria" (65%) supera significativamente a la "I+D Interna" (25%), sugiriendo un enfoque en la mejora de procesos.
+                        </p>
+                    </div>
+
+                    <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-white rounded-lg shadow-xl p-6">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-2">Patrón de Obstáculos Principales</h4>
+                        <div class="chart-container relative w-full max-w-2xl mx-auto h-80 md:h-96">
+                            <canvas id="patron2Chart"></canvas>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-600">
+                            Los obstáculos dominantes reportados con "Alta" importancia suelen ser de naturaleza financiera ("Escasez de Recursos") y de mercado ("Incertidumbre"), por encima de otros factores.
+                        </p>
+                    </div>
+
+                    <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-white rounded-lg shadow-xl p-6">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-2">Patrón de Foco de Innovación</h4>
+                        <div class="chart-container relative w-full max-w-xl mx-auto h-80 md:h-96">
+                            <canvas id="patron3Chart"></canvas>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-600">
+                            Se observa un patrón donde la innovación de "Procesos" (50%) y de productos "Mejorados" (40%) es mucho más frecuente que la creación de productos "Nuevos" (10%).
+                        </p>
+                    </div>
+
+                    <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-white rounded-lg shadow-xl p-6 flex flex-col justify-center items-center h-full min-h-[400px]">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-4">Patrón de Gestión</h4>
+                        <span class="text-7xl font-bold text-[#00429d]">90%</span>
+                        <p class="mt-4 text-lg text-gray-600 text-center max-w-xs">
+                            de las empresas innovadoras reportan tener metas de producción y revisarlas frecuentemente (ej. diariamente).
+                        </p>
+                        <p class="mt-2 text-sm text-gray-500 text-center">
+                            Este patrón de gestión activa es un distintivo clave de las empresas más productivas.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-2xl font-semibold text-gray-900 mb-6 text-center">Anomalías Hipotéticas</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-white rounded-lg shadow-xl p-6 border-l-8 border-red-500">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-2">Anomalía 1: El "Cisne Negro"</h4>
+                        <p class="text-gray-600">
+                            Empresas clasificadas como "Innovadoras en sentido estricto" que, sin embargo, reportan montos de inversión en ACTI muy bajos o nulos.
+                        </p>
+                        <p class="text-sm text-red-700 mt-2">
+                            Posible causa: Innovación impulsada por alianzas, capital intelectual no monetizado o errores de reporte.
+                        </p>
+                    </div>
+
+                    <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-white rounded-lg shadow-xl p-6 border-l-8 border-yellow-500">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-2">Anomalía 2: Inversión Ineficiente</h4>
+                        <p class="text-gray-600">
+                            Empresas con alta inversión en "I+D Internas" que están clasificadas como "No innovadoras" o "Potencialmente innovadoras".
+                        </p>
+                        <p class="text-sm text-yellow-700 mt-2">
+                            Posible causa: Proyectos de I+D fallidos, ciclos de investigación muy largos o I+D "de papel".
+                        </p>
+                    </div>
+
+                    <div class="scroll-animate opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-white rounded-lg shadow-xl p-6 border-l-8 border-green-500">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-2">Anomalía 3: Innovación Oculta</h4>
+                        <p class="text-gray-600">
+                            Sectores manufactureros tradicionales (ej. muebles, molinería) que reportan un número anómalo de patentes o personal con doctorado.
+                        </p>
+                        <p class="text-sm text-green-700 mt-2">
+                            Posible causa: Irrupción de la "Industria 4.0" (ej. Food-tech, Smart Furniture) en sectores maduros.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 p-6 mt-16">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Análisis de Big Data en la Industria Manufacturera. Infografía generada con fines académicos.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.scroll-animate').forEach(el => {
+                observer.observe(el);
+            });
+
+            const mandatoryTooltipConfig = {
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                  return label.join(' ');
+                                } else {
+                                  return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
+            const wrapLabel = (label) => {
+                if (label.length > 16) {
+                    const words = label.split(' ');
+                    const lines = [];
+                    let currentLine = '';
+                    words.forEach(word => {
+                        if ((currentLine + word).length > 16) {
+                            lines.push(currentLine.trim());
+                            currentLine = word + ' ';
+                        } else {
+                            currentLine += word + ' ';
+                        }
+                    });
+                    lines.push(currentLine.trim());
+                    return lines;
+                }
+                return label;
+            };
+
+            const chartColors = ['#00429d', '#4771b2', '#73a2c6', '#a6d3d9', '#deffff'];
+
+            const ctx1 = document.getElementById('relacion1Chart');
+            if (ctx1) {
+                new Chart(ctx1.getContext('2d'), {
+                    type: 'scatter',
+                    data: {
+                        datasets: [{
+                            label: 'Inversión I+D vs. % Innovación Estricta',
+                            data: [
+                                {x: 10, y: 5}, {x: 20, y: 15}, {x: 30, y: 25}, {x: 45, y: 30},
+                                {x: 50, y: 40}, {x: 60, y: 55}, {x: 75, y: 60}, {x: 80, y: 75}
+                            ],
+                            backgroundColor: '#00429d'
+                        }]
+                    },
+                    options: {
+                        ...mandatoryTooltipConfig,
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            x: { title: { display: true, text: 'Inversión en I+D (Millones)' } },
+                            y: { title: { display: true, text: '% Empresas Innovadoras Estrictas' } }
+                        }
+                    }
+                });
+            }
+
+            const ctx2 = document.getElementById('relacion2Chart');
+            if (ctx2) {
+                new Chart(ctx2.getContext('2d'), {
+                    type: 'scatter',
+                    data: {
+                        datasets: [{
+                            label: '% Personal Postgrado vs. Patentes',
+                            data: [
+                                {x: 2, y: 1}, {x: 5, y: 1}, {x: 10, y: 3}, {x: 15, y: 8},
+                                {x: 25, y: 10}, {x: 30, y: 12}, {x: 40, y: 15}, {x: 35, y: 11}
+                            ],
+                            backgroundColor: '#4771b2'
+                        }]
+                    },
+                    options: {
+                        ...mandatoryTooltipConfig,
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            x: { title: { display: true, text: '% Personal Postgrado en ACTI' } },
+                            y: { title: { display: true, text: 'Número de Patentes Obtenidas' } }
+                        }
+                    }
+                });
+            }
+
+            const ctx3 = document.getElementById('relacion3Chart');
+            if (ctx3) {
+                new Chart(ctx3.getContext('2d'), {
+                    type: 'bar',
+                    data: {
+                        labels: [
+                            ['Obstáculos', 'Financieros'], 
+                            ['Obstáculos', 'de Talento'], 
+                            ['Otros', 'Obstáculos']
+                        ],
+                        datasets: [
+                            {
+                                label: 'Importancia "Alta" de Obstáculos (%)',
+                                data: [80, 75, 30],
+                                backgroundColor: '#00429d'
+                            },
+                            {
+                                label: '% Empresas "No Innovadoras"',
+                                data: [70, 65, 25],
+                                backgroundColor: '#73a2c6'
+                            }
+                        ]
+                    },
+                    options: {
+                        ...mandatoryTooltipConfig,
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: { beginAtZero: true, max: 100 }
+                        }
+                    }
+                });
+            }
+
+            const ctx4 = document.getElementById('relacion4Chart');
+            if (ctx4) {
+                new Chart(ctx4.getContext('2d'), {
+                    type: 'bar',
+                    data: {
+                        labels: [
+                            ['Capital', 'Extranjero'], 
+                            ['Gestión', 'Fundador']
+                        ],
+                        datasets: [
+                            {
+                                label: 'Inversión en I+D Internas',
+                                data: [70, 30],
+                                backgroundColor: '#00429d'
+                            },
+                            {
+                                label: 'Adquisición de Maquinaria',
+                                data: [30, 70],
+                                backgroundColor: '#73a2c6'
+                            }
+                        ]
+                    },
+                    options: {
+                        ...mandatoryTooltipConfig,
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            x: { stacked: true },
+                            y: { stacked: true, title: { display: true, text: '% de Inversión Total' } }
+                        }
+                    }
+                });
+            }
+
+            const ctx5 = document.getElementById('patron1Chart');
+            if (ctx5) {
+                new Chart(ctx5.getContext('2d'), {
+                    type: 'doughnut',
+                    data: {
+                        labels: [
+                            ['Adquisición', 'Maquinaria'], 
+                            ['I+D Internas'], 
+                            ['Otros ACTI']
+                        ],
+                        datasets: [{
+                            data: [65, 25, 10],
+                            backgroundColor: chartColors
+                        }]
+                    },
+                    options: {
+                        ...mandatoryTooltipConfig,
+                        responsive: true,
+                        maintainAspectRatio: false
+                    }
+                });
+            }
+
+            const ctx6 = document.getElementById('patron2Chart');
+            if (ctx6) {
+                new Chart(ctx6.getContext('2d'), {
+                    type: 'bar',
+                    data: {
+                        labels: [
+                            ['Escasez de', 'Recursos'], 
+                            ['Incertidumbre', '(Demanda)'], 
+                            ['Falta Personal'], 
+                            ['Regulación']
+                        ],
+                        datasets: [{
+                            label: 'Importancia "Alta" del Obstáculo (%)',
+                            data: [90, 85, 60, 40],
+                            backgroundColor: chartColors
+                        }]
+                    },
+                    options: {
+                        ...mandatoryTooltipConfig,
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            ...mandatoryTooltipConfig.plugins,
+                            legend: { display: false }
+                        },
+                        scales: {
+                            y: { beginAtZero: true, max: 100 }
+                        }
+                    }
+                });
+            }
+
+            const ctx7 = document.getElementById('patron3Chart');
+            if (ctx7) {
+                new Chart(ctx7.getContext('2d'), {
+                    type: 'doughnut',
+                    data: {
+                        labels: [
+                            ['Innovación de', 'Procesos'], 
+                            ['Productos', 'Mejorados'], 
+                            ['Productos', 'Nuevos']
+                        ],
+                        datasets: [{
+                            data: [50, 40, 10],
+                            backgroundColor: chartColors
+                        }]
+                    },
+                    options: {
+                        ...mandatoryTooltipConfig,
+                        responsive: true,
+                        maintainAspectRatio: false
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
